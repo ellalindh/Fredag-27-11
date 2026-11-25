@@ -20,4 +20,8 @@ I setup() skriver vi förberedelserna som ska göras en gång när programmet st
 I loop() skriver vi instruktionerna som ska upprepas.  
 <br><br>
 **Portinitialisering**  
-När vi har kopplat komponenter till Arduino-kortet behöver vi bestämma hur anslutningarna ska användas. Det kallas i det här sammanhanget för *portinitialisering*. Kortets anslutningar kallas ofta för *pinnar*
+När vi har kopplat komponenter till Arduino-kortet behöver vi bestämma hur anslutningarna ska användas. Det kallas i det här sammanhanget för *portinitialisering*. Kortets anslutningar kallas ofta för *pinnar*. En pinne kan användas som en ingång som tar emot en signal eller som en utgång som skickar ut en signal.  
+
+Inställningen görs med pinMode(), vanligtvis i pragrammets setup(). Till exempel betyder pinMode(2, INPUT) att pinne 2 ska ta emot signaler, exempelvis från en knapp. pinMode(3, OUTPUT) betyder att pinne 3 ska skicka ut signaler, exempelvis för att styra en lampa.  
+
+Det finns även inställningen INPUT_PULLUPP. Den aktiverar ett inbyggt motstånd som hjälper ingången att få ett stabilt värde när knappen inte är nedtryckt. Om knappen kopplas mellan ingångspinnen och jord, märkt GND på kortet så blir värdet HIGH när knappen är släppt och LOW när knappen är nedtryckt.
