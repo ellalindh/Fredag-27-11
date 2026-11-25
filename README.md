@@ -9,8 +9,7 @@ En *mikroprocessor* är ett litet elektroniskt chip som utför instruktioner. Ma
 Vi skriver programmet på en vanlig dator. Sedan använder vi ett verktyg som översätter koden till instruktioner som den lila datorn förstår. Det kallas att *kompilera*. Därefter laddar vi upp programmet till mikroprocessorn, där den kan köras.
 
 Vi kan också använda ett *bibliotek*. Det är färdig kod som hjälper oss med vissa uppgifter, så att vi inte behöver skriva allt själva.
-
-
+<br><br>
 **Arduino**  
 För att arbeta praktiskt med programmering och elektronik kan vi använda *Arduino*. Det är en plattform som innehåller både programmerbara kretskort och verktyg för att skriva och ladda upp kod. På många Arduino-kort finns en *mikrokontroller*. Den innehåller en processor som utför instruktionerna, men också minne och funktioner för att ansluta andra komponenter.
 
