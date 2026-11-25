@@ -29,14 +29,14 @@ Det finns även inställningen INPUT_PULLUPP. Den aktiverar ett inbyggt motstån
 **Kod med förklaringar**  
 Nedan kommer jag ett exempel på en kod och ge en enkel förklaring till vad som kommer ske av koden.  
 
-/ the setup function runs once when you press reset or power the board
+/ the setup function runs once when you press reset or power the board  
 void setup() {  
   pinMode(D5, OUTPUT);  
   pinMode(D6, OUTPUT);  
   pinMode(D7, OUTPUT);  
 }  
 
-// the loop function runs over and over again forever
+// the loop function runs over and over again forever  
 void loop() {  
   digitalWrite(D7, HIGH);  
    digitalWrite(D6, HIGH);  
