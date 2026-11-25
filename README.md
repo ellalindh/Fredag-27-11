@@ -30,23 +30,23 @@ Det finns även inställningen INPUT_PULLUPP. Den aktiverar ett inbyggt motstån
 Nedan kommer jag ett exempel på en kod och ge en enkel förklaring till vad som kommer ske av koden.  
 
 / the setup function runs once when you press reset or power the board
-void setup() {
-  pinMode(D5, OUTPUT);
-  pinMode(D6, OUTPUT);
-  pinMode(D7, OUTPUT);
-}
+void setup() {  
+  pinMode(D5, OUTPUT);  
+  pinMode(D6, OUTPUT);  
+  pinMode(D7, OUTPUT);  
+}  
 
 // the loop function runs over and over again forever
-void loop() {
-  digitalWrite(D7, HIGH);
-   digitalWrite(D6, HIGH);
+void loop() {  
+  digitalWrite(D7, HIGH);  
+   digitalWrite(D6, HIGH);  
     digitalWrite(D5, HIGH);  // change state of the LED by setting the pin to the HIGH voltage level
-  delay(1000);                      // wait for a second
-  digitalWrite(D7, LOW);
-  digitalWrite(D6, LOW);
+  delay(1000);                      // wait for a second  
+  digitalWrite(D7, LOW);  
+  digitalWrite(D6, LOW);  
   digitalWrite(D5, LOW);   // change state of the LED by setting the pin to the LOW voltage level
-  delay(100);                      // wait for a second
-}  
+  delay(100);                      // wait for a second  
+}    
 
 M
 
