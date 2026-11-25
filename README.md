@@ -84,7 +84,7 @@ Instruktionen delay(100) gör en ny paus. den här gången är pausen 100 millis
 (Kommentaren bredvid den sista raden i koden säger att programmet väntar en sekund. men det stämmer inte med koden. Det är talet inne i parentesen som bestämmer pausen.)  
 
 7. Förloppet börjar om  
-Efter den sista pausen är instruktionerna i loop() klara. Programmet går då tillbaka till början av samma del och sätter återigen alla tre utgångar på HIGH.
+Efter den sista pausen är instruktionerna i loop() klara. Programmet går då tillbaka till början av samma del och sätter återigen alla tre utgångar på HIGH.  
 <br><br>
 Alltså är det återkommande förloppet: hög signalnivå i en sekund, låg signalnivå i en tiondels sekund och sedan om från början. setup() körs inte igen under upprepningen, eftersom pinnarna redan har ställts in.
 
