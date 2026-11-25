@@ -57,7 +57,7 @@ Programmet börjar med setup(). Den delen körs en gång när kortet får ström
 
 Här används instruktionerna pinMode(D5, OUTPUT), pinMode(D6, OUTPUT) OCH pinMode(D7, OUTPUT). De bestämmer att just de tre pinnarna på kortet ska vara utgångar. Det betyder att koertet kan skivka elektriska signaler genom dem för att styra lampan. Det här programmets portinitialisering.  
 
-2. Upprepningen börjar i loop()
+2. Upprepningen börjar i loop()  
 När förberedelserna är klara går programmet vidare i loop(). instruktionerna där körs uppifrån och ned. När programmet når slutet börjar det om från början av loopen.
 
 Det gör att bara behöver skriva förloppet en gång för att det ska upprepas så länge programmet körs.  
@@ -66,24 +66,24 @@ De tre följande instruktionerna använder digitalWrite() för att sätta D7, D6
 
 Raderna körs efter varandra, men utan någon paus emellan dem. Alltså sker ändringarna väldigt snabbt. Alla tre utgångar är sedan kvar på HIGH tills programmet ändrar dem.  
 
-4. Programmet väntar 1 sekund
+4. Programmet väntar 1 sekund  
 Instruktionen delay(1000) gör att programmet väntar i en sekund innan det fortsätter. Talet anges i millisekunder.
 
 I det här programmet innebär detta att lampan lyser i en av färgerna i en sekund.  
 
-5. Utgångarna sätts på LOW
+5. Utgångarna sätts på LOW  
 När det har gått en sekund så används digitalWrite() igen, men den här gången sätts D7, D6, D5 på LOW. Det betyder att utgångarna får en låg elektrisk signalnivå.
 
 Alla tre ändras även här snabbt efter varandra.  
 
 (Beroende på lampans koppling kan den höga signalnivån tända lampan och den låga släcka den, eller tvärt om.)  
 
-6. Programmet väntar en tiondels sekund
+6. Programmet väntar en tiondels sekund  
 Instruktionen delay(100) gör en ny paus. den här gången är pausen 100 millisekunder, vilket är en tiondels sekund.
 
 (Kommentaren bredvid den sista raden i koden säger att programmet väntar en sekund. men det stämmer inte med koden. Det är talet inne i parentesen som bestämmer pausen.)  
 
-7. Förloppet börjar om
+7. Förloppet börjar om  
 Efter den sista pausen är instruktionerna i loop() klara. Programmet går då tillbaka till början av samma del och sätter återigen alla tre utgångar på HIGH.
 <br><br>
 Alltså är det återkommande förloppet: hög signalnivå i en sekund, låg signalnivå i en tiondels sekund och sedan om från början. setup() körs inte igen under upprepningen, eftersom pinnarna redan har ställts in.
