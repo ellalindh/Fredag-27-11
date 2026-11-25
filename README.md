@@ -1,7 +1,8 @@
 # Fredag-27-11
 Presentation
 
-**Översikt**
+**Översikt**  
+Den här veckan har vi arbetat med grunderna i hur programmering och elektronik samverkar. Vi har lärt oss vad en mikroprocessor är och hur vi kan skriva, kompilera och ladda upp program till ett Arduino-kort. Vi har också gått igenom portinitialisering, alltså hur kortets anslutningar ställs in för att ta emot eller skicka ut signaler.
 
 **Mikroprocessor**  
 En *mikroprocessor* är ett litet elektroniskt chip som utför instruktioner. Man kan tänka på den som hjärnan i en dator eller en elektronisk apparat. Genom att skriva ett program talar vi om vad den ska göra. Med hjälp av andra komponenter kan den till exempel reagera på en knapptryckning och tända en lampa.
@@ -24,10 +25,10 @@ När vi har kopplat komponenter till Arduino-kortet behöver vi bestämma hur an
 
 Inställningen görs med pinMode(), vanligtvis i pragrammets setup(). Till exempel betyder pinMode(2, INPUT) att pinne 2 ska ta emot signaler, exempelvis från en knapp. pinMode(3, OUTPUT) betyder att pinne 3 ska skicka ut signaler, exempelvis för att styra en lampa.  
 
-Det finns även inställningen INPUT_PULLUPP. Den aktiverar ett inbyggt motstånd som hjälper ingången att få ett stabilt värde när knappen inte är nedtryckt. Om knappen kopplas mellan ingångspinnen och jord, märkt GND på kortet så blir värdet HIGH när knappen är släppt och LOW när knappen är nedtryckt.  
+Det finns även inställningen INPUT_PULLUP. Den aktiverar ett inbyggt motstånd som hjälper ingången att få ett stabilt värde när knappen inte är nedtryckt. Om knappen kopplas mellan ingångspinnen och jord, märkt GND på kortet så blir värdet HIGH när knappen är släppt och LOW när knappen är nedtryckt.  
 <br><br>
 **Kod med förklaringar**  
-Nedan kommer jag ett exempel på en kod och ge en enkel förklaring till vad som kommer ske av koden.  
+Nedan kommer jag ge ett exempel på en kod och ge en enkel förklaring till vad som kommer ske av koden.  
 
 // the setup function runs once when you press reset or power the board  
 void setup() {  
