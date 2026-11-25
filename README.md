@@ -2,7 +2,8 @@
 Presentation
 
 **Översikt**  
-Den här veckan har vi arbetat med grunderna i hur programmering och elektronik samverkar. Vi har lärt oss vad en mikroprocessor är och hur vi kan skriva, kompilera och ladda upp program till ett Arduino-kort. Vi har också gått igenom portinitialisering, alltså hur kortets anslutningar ställs in för att ta emot eller skicka ut signaler.
+Den här veckan har vi arbetat med grunderna i hur programmering och elektronik samverkar. Vi har lärt oss vad en mikroprocessor är och hur vi kan skriva, kompilera och ladda upp program till ett Arduino-kort. Vi har också gått igenom portinitialisering, alltså hur kortets anslutningar ställs in för att ta emot eller skicka ut signaler.  
+<br><br>
 
 **Mikroprocessor**  
 En *mikroprocessor* är ett litet elektroniskt chip som utför instruktioner. Man kan tänka på den som hjärnan i en dator eller en elektronisk apparat. Genom att skriva ett program talar vi om vad den ska göra. Med hjälp av andra komponenter kan den till exempel reagera på en knapptryckning och tända en lampa.
