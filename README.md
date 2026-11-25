@@ -48,5 +48,10 @@ void loop() {
   delay(100);                      // wait for a second  
 }    
 
-Det här programmet styr tre anslutningar på kortet: D5, D6 och D7. Alla tre får först en hög elektrisk signalnivå i en sekund och sedan en låg signalnivå i en tiondels sekund. Detta upprepas hela tiden i en loop.
+Det här programmet styr tre anslutningar på kortet: D5, D6 och D7. Alla tre får först en hög elektrisk signalnivå i en sekund och sedan en låg signalnivå i en tiondels sekund. Detta upprepas hela tiden i en loop. Dessa anslutningar är till en lampa som kan lysa i rött, grönt och blått.  
+
+Om anslutningarna styr de röda, gröna och blåa delarna i en lampa ändras alla färger tillsammans i den här koden. För att visa färgerna en i taget behöver de styras var för sig. När lampan tänds eller släcks beror på kopplingen.  
+
+1. Förberedelser i setup()
+Programmet börjar med setup(). Den delen körs en gång när kortet får ström eller när vi trycker på återställningsknappen.
 
