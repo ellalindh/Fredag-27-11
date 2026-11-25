@@ -29,7 +29,7 @@ Det finns även inställningen INPUT_PULLUPP. Den aktiverar ett inbyggt motstån
 **Kod med förklaringar**  
 Nedan kommer jag ett exempel på en kod och ge en enkel förklaring till vad som kommer ske av koden.  
 
-/ the setup function runs once when you press reset or power the board  
+// the setup function runs once when you press reset or power the board  
 void setup() {  
   pinMode(D5, OUTPUT);  
   pinMode(D6, OUTPUT);  
@@ -48,5 +48,5 @@ void loop() {
   delay(100);                      // wait for a second  
 }    
 
-M
+Det här programmet styr tre anslutningar på kortet: D5, D6 och D7. Alla tre får först en hög elektrisk signalnivå i en sekund och sedan en låg signalnivå i en tiondels sekund. Detta upprepas hela tiden i en loop.
 
