@@ -63,6 +63,7 @@ Här används instruktionerna pinMode(D5, OUTPUT), pinMode(D6, OUTPUT) OCH pinMo
 När förberedelserna är klara går programmet vidare i loop(). instruktionerna där körs uppifrån och ned. När programmet når slutet börjar det om från början av loopen.
 
 Det gör att bara behöver skriva förloppet en gång för att det ska upprepas så länge programmet körs.  
+
 3. Utgångarna sätts på HIGH  
 De tre följande instruktionerna använder digitalWrite() för att sätta D7, D6 och D5 på HIGH. Det betyder att utgångarna får en hög elektrisk signalnivå.  
 
