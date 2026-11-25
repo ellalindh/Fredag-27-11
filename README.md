@@ -18,6 +18,5 @@ Till kortet kan vi koppla exempelvis knappar, sensorer och lampor. Vi skriver pr
 Ett vanligt Arduino-program innehåller två basfunktioner: setup() och loop().  
 I setup() skriver vi förberedelserna som ska göras en gång när programmet startar.  
 I loop() skriver vi instruktionerna som ska upprepas.  
-
-
+<br><br><br>
 **Portinitialisering**
